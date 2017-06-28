@@ -1,4 +1,4 @@
-FROM selenium/standalone-chrome:2.53.1-beryllium
+FROM selenium/standalone-chrome:3.4.0-dysprosium
 
 ENV EXT_HEADLESS_URL https://testimstatic.blob.core.windows.net/extension/testim-headless.zip
 ENV EXT_HEADLESS_ZIP_LOC /opt/testim-headless.zip
