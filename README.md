@@ -1,15 +1,17 @@
 # standalone-chrome
-Selenium standalone with chrome + Testim Extension for arm.
+Selenium standalone with chrome + Testim Extension for arm-based chip.
 
+Creating the image locally
 ```
-# Creating the image locally
 docker build -t testim/standalone-chrome:4.x-108-arm .
 ```
+
+Running the image locally
 ```
-# Running the image locally
-docker run --rm -it -p 4444:4444 -p 5900:5900 -p 7900:7900 --shm-size 2g testim/stanalone-chrome:4.x-108-arm
+docker run --rm -it -p 4444:4444 -p 5900:5900 -p 7900:7900 --shm-size 2g testim/standalone-chrome:4.x-108-arm
 ```
+
+Execute Testim cli
 ```
-# Execute Testim cli
 testim --token "<token>" --project "<projectID>" --host 127.0.0.1
 ```
