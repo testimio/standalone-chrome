@@ -1,7 +1,6 @@
 # standalone-chrome
-Selenium standalone with chrome + Testim Extension
+Selenium standalone with chrome + Testim Extension for intel-based chip.
 
-Run
 
 Creating the image locally
 ```
