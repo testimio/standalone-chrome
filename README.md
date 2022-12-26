@@ -13,7 +13,7 @@ Running the image locally
 docker run -p 127.0.0.1:4444:4444/tcp standalone-chrome:3.x-108
 ```
 
+Execute Testim cli
 ```
-#Execute Testim cli
 testim --token "<token>" --project "<projectID>" --host 127.0.0.1
 ```
