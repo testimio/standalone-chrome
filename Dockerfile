@@ -27,8 +27,6 @@ RUN apt-get -qqy install google-chrome-stable=${CHROME_VERSION}-1 \
 #=================================
 # Chrome Launch Script Wrapper
 #=================================
-COPY wrap_chrome_binary /opt/bin/wrap_chrome_binary
-RUN /opt/bin/wrap_chrome_binary
 
 USER root
 
@@ -51,10 +49,6 @@ RUN if [ -z "$CHROME_DRIVER_VERSION" ]; \
   && chmod 755 /opt/selenium/chromedriver-$CHROME_DRIVER_VERSION \
   && sudo ln -fs /opt/selenium/chromedriver-$CHROME_DRIVER_VERSION /usr/bin/chromedriver
 
-COPY generate_config /opt/bin/generate_config
-
-# Generating a default config during build time
-RUN /opt/bin/generate_config > /opt/selenium/config.json
 
 # Testim's extension version
 RUN apt-get update -qqy \
