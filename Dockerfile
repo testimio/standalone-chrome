@@ -1,4 +1,4 @@
-FROM seleniarm/standalone-chromium:108.0
+FROM selenium/standalone-chrome:108.0
 
 ENV EXT_HEADLESS_URL https://testimstatic.blob.core.windows.net/extension/testim-headless.zip
 ENV EXT_HEADLESS_ZIP_LOC /opt/testim-headless.zip
