@@ -7,5 +7,5 @@ For Intel look for (selneium version).x-(chrome version)
 
 Follow the readme in each branch for the build and run instructions
 
-Thanks
+Thanks   
 The Testim Team
